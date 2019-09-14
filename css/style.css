@@ -1,10 +1,59 @@
+/* Genereal {{ */
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.wolf");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url("../fonts/OpenSans-Bold.wolf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Open Sans', "Arial", sans-serif;
+	font-size: 8px;
+}
+
+h1 {
+  font-size: 3.5em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+h2 {
+  /* font-size: 20px; */
+  color: #000000;
+  text-transform: uppercase;
+}
+
+h3 {
+  /* font-size: 14px; */
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.visually-hidden {
+  width: 1px;
+  height: 1px;
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute;
+}
+/* }} general */
+
+/* Body {{ */
 .section_header__top {
   background-image: url("../images/football_767.jpg");
   min-height: 100vh;
   position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-color: #9E9E9E;
@@ -15,17 +64,86 @@
   content: "";
   width: 100%;
   height: 100%;
-  background-color: #0f1234;
-  opacity: 0.7;
+  background-color: #0f0f31;
+  opacity: 0.8;
   position: absolute;
   top: 0;
   left: 0;
 }
 
-.header__title {
-  padding-right: 10px;
-  padding-left: 10px;
-  margin: auto;
+.box_header_content{
   position: relative;
   z-index: 2;
+}
+
+.logo__top {
+  text-align: center;
+}
+
+.logo {
+  color: #ffffff;
+  height: 4em;
+  margin: 4em auto 16em auto;
+}
+
+.header_slogan {
+  display: block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header__for_left {
+  text-align: left;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.header__what_right {
+  text-align: left;
+  display: inline-block;
+  margin-left: 45px;
+}
+
+.button_box {
+  margin-top: 10em;
+  margin-bottom: 10em;
+}
+
+.button {
+  display: block;
+  box-sizing: border-box;
+  padding: 5px 30px 3px 90px;
+  width: 87%;
+  border: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  margin-left: 20px;
+  background-color: #9b59b6;
+  border-radius: 25px;
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: left 60px center;
+  margin-bottom: 2%;
+}
+
+.button_text {
+  display: inline-block;
+  vertical-align: middle;
+  width: 200px;
+  text-align: left;
+}
+
+.button_text_bold {
+  font-weight: 700;
+  text-align: left;
+}
+
+.download__app_apple {
+  background-image: url("../svg/apple_logo_black.svg");
+  /* fill не работает так как надо svg вносить в код html */
+}
+
+.download__app_google {
+  background-image: url("../svg/google-play.svg");
 }
