@@ -1,14 +1,18 @@
 /* Genereal {{ */
 @font-face {
-  font-family: 'Open Sans';
-  src: url("../fonts/OpenSans-Bold.wolf");
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Regular.ttf");
+  src: url("../fonts/OpenSans-Regular.wolf");
+  src: url("../fonts/OpenSans-Regular.wolf2");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
+  src: url("../fonts/OpenSans-Bold.ttf");
   src: url("../fonts/OpenSans-Bold.wolf");
+  src: url("../fonts/OpenSans-Bold.wolf2");
   font-weight: 700;
   font-style: normal;
 }
@@ -18,26 +22,31 @@
   padding: 0;
 }
 
+html {
+  font-size: 51.2%;
+  /* 8px */
+}
+
 body {
-  font-family: 'Open Sans', "Arial", sans-serif;
-	font-size: 8px;
+  font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 1.75rem;
 }
 
 h1 {
-  font-size: 3.5em;
+  font-size: 3.5rem;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 
 h2 {
-  /* font-size: 20px; */
-  color: #000000;
+  font-size: 6.25rem;
+  color: #c1c1c1;
   text-transform: uppercase;
 }
 
 h3 {
-  /* font-size: 14px; */
-  color: #000000;
+  font-size: 3rem;
+  color: #c1c1c1;
   text-transform: uppercase;
 }
 
@@ -50,7 +59,7 @@ h3 {
 /* }} general */
 
 /* Body {{ */
-.section_header__top {
+.top {
   background-image: url("../images/football_767.jpg");
   min-height: 100vh;
   position: relative;
@@ -60,7 +69,7 @@ h3 {
   background-size: cover;
 }
 
-.section_header__top::before {
+.top::before {
   content: "";
   width: 100%;
   height: 100%;
@@ -76,61 +85,51 @@ h3 {
   z-index: 2;
 }
 
-.logo__top {
+.logo_top {
   text-align: center;
 }
 
 .logo {
   color: #ffffff;
-  height: 4em;
-  margin: 4em auto 16em auto;
+  height: 4rem;
+  margin: 3.5rem auto 8rem auto;
 }
 
 .header_slogan {
   display: block;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 8rem  2.5rem 5.3rem;
 }
 
-.header__for_left {
+.header_for_left {
   text-align: left;
   display: inline-block;
   margin-bottom: 30px;
 }
 
-.header__what_right {
+.header_what_right {
   text-align: left;
   display: inline-block;
-  margin-left: 45px;
+  margin-left: 14%;
 }
 
 .button_box {
-  margin-top: 10em;
-  margin-bottom: 10em;
+  margin: 8.3rem auto;
 }
 
 .button {
-  display: block;
-  box-sizing: border-box;
-  padding: 5px 30px 3px 90px;
+  padding: 5px 9% 3px 19%;
   width: 87%;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
-  margin-left: 20px;
+  margin: 3% 6%;
   background-color: #9b59b6;
   border-radius: 25px;
-  background-size: 25px;
-  background-repeat: no-repeat;
-  background-position: left 60px center;
-  margin-bottom: 2%;
+  display: flex;
 }
 
 .button_text {
-  display: inline-block;
-  vertical-align: middle;
-  width: 200px;
   text-align: left;
 }
 
@@ -139,11 +138,96 @@ h3 {
   text-align: left;
 }
 
-.download__app_apple {
-  background-image: url("../svg/apple_logo_black.svg");
-  /* fill не работает так как надо svg вносить в код html */
+.logo_box {
+  fill: #ffffff;
+  height: 25px;
+  width: 20px;
+  padding-right: 10px;
 }
 
-.download__app_google {
-  background-image: url("../svg/google-play.svg");
+.athlets {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.section_title {
+  margin-left: 6%;
+}
+
+.section_png {
+  max-width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: block;
+  /* position: absolute; */
+}
+
+.post_container {
+  padding: 16% 6%;
+}
+
+.post_header {
+  display: inline-flex;
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.number_post {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  position: relative;
+  radius
+}
+
+.number_post_white {
+  font-weight: 700;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.75rem;
+  position: relative;
+}
+
+.post_title {
+  padding-left: 3.5%;
+}
+
+/* убрать повторения  */
+.number_post::after {
+ content: "";
+ position: absolute;
+ bottom: 7px;
+ left: 0px;
+ width: 15px;
+ height: 4px;
+ background-color: #5e42b0;
+ right: 0;
+ border-radius: 25px;
+ margin: 0 auto;
+}
+
+.number_post_white::after {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: 0px;
+  width: 15px;
+  height: 4px;
+  right: 0;
+  margin: 0 auto;
+  background-color: #ffffff;
+  border-radius: 25px;
+}
+
+.collaboration {
+  background-color: #f5f4f9;
+}
+.growth {
+  background-color: #5e42b0;
+}
+
+.connection {
+  background-color: #fafafa;
 }
