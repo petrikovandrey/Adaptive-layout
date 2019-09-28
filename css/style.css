@@ -99,12 +99,12 @@ h4 {
 .logo {
   color: #ffffff;
   height: 4rem;
-  margin: 3.5rem auto 8rem auto;
+  margin-top: 3.5rem;
 }
 
 .header_slogan {
   display: block;
-  margin: 8rem  2.5rem 5.3rem;
+  margin: 16rem  2.5rem 5.3rem;
 }
 
 .header_for_left {
@@ -124,32 +124,40 @@ h4 {
 }
 
 .button {
-  padding: 5px 9% 3px 19%;
+  padding: 2px 9% 2px 19%;
   width: 87%;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
   cursor: pointer;
   margin: 3% 6%;
-  background-color: #9b59b6;
+  background-color: #5e42b0;
   border-radius: 25px;
   display: flex;
 }
 
 .button_text {
   text-align: left;
+  font-size: 1rem;
+  margin-bottom: 2px;
 }
 
 .button_text_bold {
   font-weight: 700;
   text-align: left;
+  font-size: 1rem;
+  margin-top: 2px;
 }
 
 .logo_box {
   fill: #ffffff;
-  height: 25px;
-  width: 20px;
+  /* height: 25px; */
+  width: 27px;
   padding-right: 10px;
+}
+
+.text_box {
+  margin: 6px 0;
 }
 
 .athlets {
@@ -157,7 +165,7 @@ h4 {
 }
 
 .section_title {
-  margin-left: 6%;
+  margin: 7.5% 0px 0px 6%;
 }
 
 .section_png {
@@ -179,6 +187,10 @@ h4 {
   margin-bottom: 1.5em;
 }
 
+.post_title_second {
+  padding-bottom: 5%;
+}
+
 .number_post {
   font-weight: 700;
   text-decoration: none;
@@ -195,10 +207,6 @@ h4 {
   font-size: 1.75rem;
   position: relative;
   margin-right: 3.5%;
-}
-
-.post_title_second {
-  padding-bottom: 5%;
 }
 
 /* убрать повторения  */
@@ -241,7 +249,7 @@ h4 {
 
 .connection {
   background-color: #fafafa;
-  margin-top: 225px;
+  margin-top: 220px;
 }
 
 .section_jpg {
@@ -253,7 +261,10 @@ h4 {
   box-sizing: border-box;
   background-color: #eeeeee;
   position: relative;
+}
 
+.growth {
+  background-color: #090c35;
 }
 
 .number_post_second {
@@ -342,9 +353,25 @@ h4 {
 }
 
 .footer_text_box {
-  display: block; 
+  display: block;
 }
 
 .text {
   display: block;
+}
+
+.footer_slogan {
+  font-size: 4rem;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.footer_text {
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  color: #9b8ec1;
+  font-weight: 400;
+  font-style: normal;
 }
