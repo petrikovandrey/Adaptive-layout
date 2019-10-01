@@ -29,7 +29,9 @@ html {
 
 body {
   font-family: "Open Sans", "Arial", sans-serif;
-	font-size: 1.75rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1.75rem;
 }
 
 h1 {
@@ -66,24 +68,26 @@ h4 {
 
 /* Body {{ */
 .top {
-  background-image: url("../images/football_767.jpg");
-  min-height: 100vh;
   position: relative;
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-color: #9E9E9E;
-  background-size: cover;
+  background-color: #0a0e34;
+  /* width: 100%; */
+  min-height: 100vh;
 }
 
 .top::before {
   content: "";
+  min-height: 100vh;
   width: 100%;
   height: 100%;
-  background-color: #0f0f31;
-  opacity: 0.8;
+  background-color: #9E9E9E;
+  opacity: 0.1;
   position: absolute;
   top: 0;
   left: 0;
+  background-image: url("../images/football_767.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 50% 0;
 }
 
 .box_header_content {
@@ -98,6 +102,7 @@ h4 {
 
 .logo {
   color: #ffffff;
+  fill: #ffffff;
   height: 4rem;
   margin-top: 3.5rem;
 }
@@ -107,15 +112,19 @@ h4 {
   margin: 16rem  2.5rem 5.3rem;
 }
 
-.header_for_left {
+.header_size {
   text-align: left;
   display: inline-block;
+  font-size: 3.5rem;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+
+.header_left {
   margin-bottom: 30px;
 }
 
-.header_what_right {
-  text-align: left;
-  display: inline-block;
+.header_right {
   margin-left: 14%;
 }
 
@@ -125,7 +134,6 @@ h4 {
 
 .button {
   padding: 2px 9% 2px 19%;
-  width: 87%;
   border: none;
   text-transform: uppercase;
   color: #ffffff;
@@ -165,7 +173,7 @@ h4 {
 }
 
 .section_title {
-  margin: 7.5% 0px 0px 6%;
+  padding: 7.5% 0px 0px 6%;
 }
 
 .section_png {
@@ -179,16 +187,38 @@ h4 {
 
 .post_container {
   padding: 16% 6%;
+
+}
+
+.background-light {
+  background-color: #fafafa;
+  margin-top: 220px;
+}
+
+.background-medium {
+  background-color: #f5f4f9;
+}
+
+.background-dark {
+  background-color: #5e42b0;
+}
+
+.background-very-dark {
+  background-color: #090c35;
+  color: #ffffff;
 }
 
 .post_header {
-  display: inline-flex;
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+  position: relative;
+}
+.post_title {
+  margin-left: 24px;
 }
 
 .post_title_second {
-  padding-bottom: 5%;
+  margin-bottom: 5%;
 }
 
 .number_post {
@@ -196,60 +226,51 @@ h4 {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.75rem;
-  position: relative;
-  margin-right: 3.5%;
+  position: absolute;
+  bottom: 9px;
 }
 
-.number_post_white {
-  font-weight: 700;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 1.75rem;
-  position: relative;
-  margin-right: 3.5%;
-}
-
-/* убрать повторения  */
-.number_post::after {
+.underline-general::after {
  content: "";
  position: absolute;
- bottom: 7px;
+ bottom: -3px;
  left: 0px;
  width: 15px;
  height: 4px;
- background-color: #5e42b0;
  right: 0;
+ background-color: #5e42b0;
  border-radius: 25px;
  margin: 0 auto;
 }
 
-.number_post_white::after {
+.underline-reverse::after {
   content: "";
   position: absolute;
-  bottom: 7px;
+  bottom: -3px;
   left: 0px;
   width: 15px;
   height: 4px;
   right: 0;
-  margin: 0 auto;
   background-color: #ffffff;
   border-radius: 25px;
+  margin: 0 auto;
 }
 
-.collaboration {
-  background-color: #f5f4f9;
-}
-.growth {
-  background-color: #5e42b0;
+.underline-reverse-second::after {
+  content: "";
+  position: absolute;
+  bottom: -3px;
+  left: 0px;
+  width: 15px;
+  height: 4px;
+  right: 0;
+  background-color: #ffffff;
+  border-radius: 25px;
+  margin: 0 auto;
 }
 
-/* .growth:last-child {
-  background-color: #090c35;
-} */
-
-.connection {
-  background-color: #fafafa;
-  margin-top: 220px;
+.number_reverse_color {
+  color: #5e42b0;
 }
 
 .section_jpg {
@@ -261,10 +282,6 @@ h4 {
   box-sizing: border-box;
   background-color: #eeeeee;
   position: relative;
-}
-
-.growth {
-  background-color: #090c35;
 }
 
 .number_post_second {
@@ -350,6 +367,7 @@ h4 {
 .logo_surface {
   height: 6rem;
   margin: 3.5rem auto 8rem auto;
+  fill: #ffffff;
 }
 
 .footer_text_box {
